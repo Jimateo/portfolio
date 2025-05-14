@@ -23,9 +23,6 @@
         <li><a href="#publications" class="hover:underline">Publicaciones</a></li>
         <li><a href="#contact" class="hover:underline">Contacto</a></li>
       </ul>
-      <button id="theme-toggle" class="p-2 rounded focus:outline-none" aria-label="Toggle Theme">
-        <span id="theme-icon">☀️</span>
-      </button>
     </nav>
   </header>
 
@@ -124,11 +121,6 @@
     const themeIcon = document.getElementById('theme-icon');
     themeToggle.addEventListener('click', () => {
       document.documentElement.classList.toggle('dark');
-      if (document.documentElement.classList.contains('dark')) {
-        themeIcon.textContent = '☀️';
-      } else {
-        themeIcon.textContent = '🌙';
-      }
     });
   </script>
 </body>
