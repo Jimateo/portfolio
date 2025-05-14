@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="es" class="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio | José Ignacio Mateo Trujillo</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    // Enable dark mode via class strategy
-    tailwind.config = { darkMode: 'class' };
-  </script>
+  <script>tailwind.config = { darkMode: 'class' };</script>
 </head>
-<body class="bg-gray-900 dark:bg-gray-900 text-gray-100 font-sans transition-colors duration-300">
+<body class="bg-gray-900 text-gray-100 font-sans transition-colors duration-300">
   <!-- Header & Navigation -->
   <header class="fixed w-full bg-gray-800/90 backdrop-blur z-50">
     <nav class="container mx-auto flex items-center justify-between p-4">
@@ -21,7 +18,7 @@
         <li><a href="#about" class="hover:underline">Sobre mí</a></li>
         <li><a href="#projects" class="hover:underline">Proyectos</a></li>
         <li><a href="#publications" class="hover:underline">Publicaciones</a></li>
-        <li><a href="#contact" class="hover:underline">Contacto</a></li>
+        <li><a href="#skills" class="hover:underline">Habilidades</a></li>
       </ul>
     </nav>
   </header>
@@ -29,42 +26,53 @@
   <main class="pt-24 container mx-auto px-4">
     <!-- Hero Section -->
     <section id="hero" class="text-center py-20">
-      <!-- Foto de Perfil -->
-      <img src="profile.jpg" alt="Foto de José Ignacio" class="w-40 h-40 rounded-full mx-auto mb-6 object-cover shadow-lg" />
+      <img src="profile.jpg" alt="Foto de José Ignacio" class="w-40 h-40 rounded-full mx-auto mb-6 object-cover shadow-lg"/>
       <h1 class="text-4xl md:text-6xl font-extrabold">Hola, soy José Ignacio</h1>
-      <p class="mt-4 text-xl max-w-2xl mx-auto">Ingeniero en Telemática y Doctorando con pasión por la Inteligencia Artificial y sistemas de recomendación.</p>
-      <div class="mt-6 space-x-4">
-        <a href="Cv.pdf" download="CV_JoseIgnacio_Mateo_Trujillo.pdf" class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Descargar CV</a>
+      <p class="mt-4 text-xl max-w-2xl mx-auto">
+        Ingeniero en Telemática y Doctorando con pasión por la Inteligencia Artificial y sistemas de recomendación.
+      </p>
+      <div class="mt-6">
+        <a href="Cv.pdf" download="CV_JoseIgnacio_Mateo_Trujillo.pdf" 
+           class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">
+          Descargar CV
+        </a>
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-16">
       <h2 class="text-3xl font-bold mb-6">Sobre mí</h2>
-      <p class="max-w-3xl">Soy un investigador en la Universidad de Málaga desarrollando soluciones basadas en IA para trastornos de lectoescritura, con experiencia en redes neuronales, sistemas de recomendación y análisis de datos. Me destaco por mi pensamiento analítico, liderazgo técnico y trabajo colaborativo.</p>
+      <p class="max-w-3xl">
+        Soy un investigador en la Universidad de Málaga desarrollando soluciones basadas en IA para trastornos de lectoescritura, 
+        con experiencia en redes neuronales, sistemas de recomendación y análisis de datos. Me destaco por mi pensamiento analítico, 
+        liderazgo técnico y trabajo colaborativo.
+      </p>
       <div class="mt-4 space-x-4">
-        <a href="https://www.linkedin.com/in/jose-ignacio-mateo-trujillo-ia-agents/" target="_blank" class="hover:underline">LinkedIn</a>
-        <a href="https://scholar.google.es/citations?user=hUOanwEAAAAJ" target="_blank" class="hover:underline">Google Scholar</a>
+        <a href="https://linkedin.com/in/jose-ignacio-mateo-trujillo" target="_blank" class="hover:underline">LinkedIn</a>
+        <a href="https://scholar.google.es/citations?user=hUOanwEAAAAJ"       target="_blank" class="hover:underline">Google Scholar</a>
       </div>
     </section>
 
-    <!-- Projects / Experience Section -->
+    <!-- Projects Section -->
     <section id="projects" class="py-16">
       <h2 class="text-3xl font-bold mb-8">Proyectos Destacados</h2>
       <div class="grid md:grid-cols-2 gap-8">
-        <!-- Project 1 -->
         <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
           <h3 class="text-2xl font-semibold mb-2">Plataforma de Intervención en Dislexia</h3>
-          <p class="mb-4">Desarrollo de una plataforma inteligente para intervención en trastornos de lectoescritura basada en sistemas de recomendación personalizados.</p>
+          <p class="mb-4">
+            Desarrollo de una plataforma inteligente para intervención en trastornos de lectoescritura 
+            basada en sistemas de recomendación personalizados.
+          </p>
           <ul class="list-disc list-inside">
             <li>Algoritmos de filtrado colaborativo multinivel y redes neuronales.</li>
             <li>Sistema de generación automática de ítems de lectura con sentido fonológico.</li>
           </ul>
         </div>
-        <!-- Project 2 -->
         <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
           <h3 class="text-2xl font-semibold mb-2">Modelos Híbridos de Recomendación</h3>
-          <p class="mb-4">Integración de modelos híbridos para mejorar precisión y adaptabilidad en sistemas de recomendación.</p>
+          <p class="mb-4">
+            Integración de modelos híbridos para mejorar precisión y adaptabilidad en sistemas de recomendación.
+          </p>
           <ul class="list-disc list-inside">
             <li>Diseño e implementación de sistemas híbridos.</li>
             <li>Mejora continua basada en métricas KPIs y A/B testing.</li>
@@ -78,10 +86,16 @@
       <h2 class="text-3xl font-bold mb-6">Publicaciones Recientes</h2>
       <ul class="space-y-4">
         <li>
-          <a href="https://doi.org/10.1007/978-3-031-61137-7_20" target="_blank" class="text-blue-400 hover:underline">Dual-System Recommendation Architecture for Adaptive Reading Intervention Platform for Dyslexic Learners.</a>
+          <a href="https://doi.org/10.1007/978-3-031-61137-7_20" target="_blank" 
+             class="text-blue-400 hover:underline">
+            Dual-System Recommendation Architecture for Adaptive Reading Intervention Platform for Dyslexic Learners.
+          </a>
         </li>
         <li>
-          <a href="https://doi.org/10.1142/S0129065725500327" target="_blank" class="text-blue-400 hover:underline">Directed weighted EEG connectogram insights of one-to-one causality for identifying developmental dyslexia.</a>
+          <a href="https://doi.org/10.1142/S0129065725500327" target="_blank" 
+             class="text-blue-400 hover:underline">
+            Directed weighted EEG connectogram insights of one-to-one causality for identifying developmental dyslexia.
+          </a>
         </li>
       </ul>
     </section>
@@ -118,9 +132,10 @@
   <!-- Theme Toggle Script -->
   <script>
     const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
+    const themeIcon   = document.getElementById('theme-icon');
     themeToggle.addEventListener('click', () => {
       document.documentElement.classList.toggle('dark');
+      themeIcon.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
     });
   </script>
 </body>
